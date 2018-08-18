@@ -1,3 +1,3 @@
-python -u main.py --dataset amazon-automotive --epochs 100 --load_best_chkpoint 0 --model gmmf --num_factors 128 --reg 0.01 --distance_metric l2 --act_func tanh --max_seq_len 5 --reg 0.001
-python -u main.py --dataset amazon-automotive --epochs 100 --load_best_chkpoint 0 --model tmr --num_factors 128 --n_hops 2 --reg 0.01 --distance_metric l2 --act_func tanh --max_seq_len 5 --gate_tying 'gate_global' --reg 0.001
+python -u main.py --dataset amazon-automotive --epochs 100 --load_best_chkpoint 0 --model gmmf --num_factors 128 --reg 0.01 --distance_metric l2 --act_func tanh --max_seq_len 5
+python -u main.py --dataset amazon-automotive --epochs 100 --load_best_chkpoint 0 --model tmr --num_factors 128 --n_hops 2 --reg 0.01 --distance_metric l2 --act_func tanh --max_seq_len 5 --gate_tying 'gate_global'
 python -u main.py --dataset amazon-automotive --epochs 1 --load_best_chkpoint 1 --model dmr --num_factors 128 --n_hops 2 --reg 0.01 --distance_metric l2 --act_func tanh --max_seq_len 5 --gate_tying 'gate_global'
